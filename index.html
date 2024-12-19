@@ -21,9 +21,34 @@
         </nav>
     </header>
 
+    <!-- Форма регистрации -->
+    <div id="registration-form" class="form-container">
+        <h2>Регистрация</h2>
+        <form id="register-form">
+            <label for="reg-username">Имя пользователя:</label>
+            <input type="text" id="reg-username" required>
+            <label for="reg-password">Пароль:</label>
+            <input type="password" id="reg-password" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <!-- Форма входа -->
+    <div id="login-form" class="form-container">
+        <h2>Вход</h2>
+        <form id="login-form">
+            <label for="login-username">Имя пользователя:</label>
+            <input type="text" id="login-username" required>
+            <label for="login-password">Пароль:</label>
+            <input type="password" id="login-password" required>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+
+    <!-- Основной контент -->
     <section id="stone-age">
         <h2>Тас дәуірі</h2>
-        <p>Тас дәуірі 1,5 миллион жыл бұрынғыдан б.з.д. 3 мың жылға дейінгі кезеңді қамтиды. e. Бұл Қазақстан аумағындағы адамзат тарихының бастауы.</p>
+        <p>Тас дәуірі 1,5 миллион жыл бұрынғыдан б.з.д. 3 мың жылға дейінгі кезеңді қамтиды.</p>
         
         <h3>Палеолит (1,5 млн жыл бұрын – б.з.б. 10 мың жыл)</h3>
         <p>Қазақстандағы адамдардың алғашқы іздері палеолит дәуіріне жатады. Бұл уақытта елде ежелгі адамдар тас құралдарды пайдаланып өмір сүрген. Негізгі қызметі аңшылық пен терімшілік болды. Осы кезеңге жататын еңбек құралдары Мәртөк пен Қаратау үңгірлерінен табылған.</p>
@@ -89,6 +114,16 @@
         <p>Соңғы онжылдықтарда Қазақстан экономика мен білім беруден бастап әлеуметтік саясатқа дейін әртүрлі салаларда белсенді реформаларды жүргізуде. Ел инфрақұрылымын жаңғыртып, жаңа технологияларды дамытып, азаматтардың өмір сүру сапасын жақсарту үшін белсенді жұмыс жасауда.</p>
     </section>
 
+    
+
+   
+
+    <footer>
+        <p>© 2024 Қазақстан Тарихы</p>
+        <p id="datetime"></p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
+
