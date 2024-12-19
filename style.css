@@ -7,134 +7,51 @@ body {
     color: #333;
 }
 
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', serif;
-    color: #2e3d49;
-}
-
-/* Основной контейнер для сайта */
-header {
-    background-color: #2e3d49;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 36px;
-    margin: 0;
-}
-
-nav ul {
-    padding: 0;
-    margin: 20px 0 0;
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #f4a300;
-}
-
-/* Разделы страницы */
-section {
-    margin: 40px 20px;
+/* Стили для форм регистрации и входа */
+.form-container {
+    background-color: #fff;
     padding: 20px;
-    background-color: white;
+    margin: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
 }
 
-section h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+.form-container h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-section p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
 }
 
-section h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #2e3d49;
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-footer {
+.form-container button {
+    width: 100%;
+    padding: 10px;
     background-color: #2e3d49;
     color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-footer p {
-    font-size: 14px;
+.form-container button:hover {
+    background-color: #f4a300;
 }
 
-/* Адаптивность для мобильных устройств */
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    section {
-        margin: 20px;
-        padding: 15px;
-    }
-
-    section h2 {
-        font-size: 24px;
-    }
-
-    section h3 {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 24px;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 8px;
-    }
-
-    section h2 {
-        font-size: 22px;
-    }
-
-    section h3 {
-        font-size: 18px;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-}
-/* 1. Стили для анимации плавного появления */
+/* Стили для анимации плавного появления */
 .hidden {
     opacity: 0;
     transform: translateY(50px);
@@ -146,7 +63,7 @@ footer p {
     transform: translateY(0);
 }
 
-/* 2. Стили для фиксированного меню */
+/* Фиксация меню при прокрутке страницы */
 header.sticky {
     position: fixed;
     top: 0;
@@ -157,7 +74,7 @@ header.sticky {
     z-index: 1000;
 }
 
-/* 3. Стили для отображения даты и времени в подвале */
+/* Стили для отображения даты и времени в подвале */
 footer #datetime {
     font-size: 14px;
     color: #ccc;
